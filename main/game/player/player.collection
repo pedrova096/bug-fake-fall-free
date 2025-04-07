@@ -1,0 +1,39 @@
+name: "player"
+scale_along_z: 0
+embedded_instances {
+  id: "go"
+  data: "components {\n"
+  "  id: \"player\"\n"
+  "  component: \"/main/game/player/player.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"logo_256\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/main.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "hold"
+  data: ""
+  position {
+    y: -151.0
+    z: 3.0
+  }
+}
+embedded_instances {
+  id: "bullet"
+  data: "embedded_components {\n"
+  "  id: \"factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/main/game/bullet/bullet.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}

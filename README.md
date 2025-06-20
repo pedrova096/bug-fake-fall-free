@@ -6,6 +6,9 @@ I wanted to share an issue I've run into while working on a project. I appreciat
 
 There's two related issues:
 
+
+
+
 1. I have a `collection` with a root `object` "container" and a child that has a `collision-object` and a `sprite`
 
 - **The issue:** When I place it on the `main.collection` and set a position different from zero it will fire off taking that direction. If the position it's `vec3(0, 0, 0)` then nothing happens.
@@ -16,7 +19,7 @@ There's two related issues:
 
 ### Record
 
-![Record](./doc/record.mp4)
+https://github.com/user-attachments/assets/ee46b201-fd37-4fb7-8666-426bbf813b81
 
 ### Notes
 

@@ -1,0 +1,4 @@
+
+function update(self, dt)
+	print("position", go.get_position())
+end

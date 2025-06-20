@@ -1,27 +1,47 @@
 name: "main"
+instances {
+  id: "one"
+  prototype: "/main/test_2/one.go"
+  position {
+    y: -181.0
+    z: 1.0
+  }
+}
 collection_instances {
-  id: "game"
-  collection: "/main/game/game.collection"
+  id: "test"
+  collection: "/main/test/test.collection"
+}
+collection_instances {
+  id: "test-right"
+  collection: "/main/test/test.collection"
+  position {
+    x: 200.0
+  }
+}
+collection_instances {
+  id: "test-top"
+  collection: "/main/test/test.collection"
+  position {
+    y: 200.0
+  }
 }
 scale_along_z: 0
 embedded_instances {
-  id: "go"
+  id: "camera"
   data: "embedded_components {\n"
-  "  id: \"game_proxy\"\n"
-  "  type: \"collectionproxy\"\n"
-  "  data: \"collection: \\\"/main/game/game.collection\\\"\\n"
+  "  id: \"camera\"\n"
+  "  type: \"camera\"\n"
+  "  data: \"aspect_ratio: 1.0\\n"
+  "fov: 0.7854\\n"
+  "near_z: 0.1\\n"
+  "far_z: 1000.0\\n"
+  "auto_aspect_ratio: 1\\n"
+  "orthographic_projection: 1\\n"
+  "orthographic_zoom: 0.3\\n"
   "\"\n"
   "}\n"
   ""
   position {
-    z: 1.0
+    z: 100.0
   }
-}
-embedded_instances {
-  id: "controller"
-  data: "components {\n"
-  "  id: \"main\"\n"
-  "  component: \"/main/main.script\"\n"
-  "}\n"
-  ""
 }

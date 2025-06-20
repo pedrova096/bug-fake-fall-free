@@ -1,7 +1,7 @@
 name: "main"
 instances {
-  id: "one"
-  prototype: "/main/test_2/one.go"
+  id: "foo"
+  prototype: "/main/test_2/foo.go"
   position {
     y: -181.0
     z: 1.0

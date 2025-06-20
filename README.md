@@ -1,6 +1,6 @@
 ## Bug Report
 
-I wanted to share an issue I’ve run into while working on a project. I appreciate your time and help.
+I wanted to share an issue I've run into while working on a project. I appreciate your time and help.
 
 ### Summary
 
@@ -14,9 +14,9 @@ There's two related issues:
 
 - **The issue:** On code when I create `bar` and set the parent to `.` it will fire off taking that direction
 
-#### Render without camera
+### Record
 
-![render without camera](./doc/record.mp4)
+![Record](./doc/record.mp4)
 
 ### Notes
 
